@@ -1,11 +1,10 @@
-<!-- https://www.w3schools.com/w3css/tryw3css_templates_startup.htm#team -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Startup Website</title>
+  <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -17,19 +16,23 @@
       <div class="logo">
         <h2>LOGO</h2>
       </div>
-      <div>
-        <ul class="nav-right">
-          <li><a href="">Home</a></li>
-          <li><a href="">Team</a></li>
-          <li><a href="">work</a></li>
-          <li><a href="">Pricing</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
+      <div class="menu" id="menu">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
+      <ul class="nav-right" id="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
   </header>
+
   <!-- main Section -->
-  <main>
+  <main id="home">
     <div class="heading">
       <h1>Start something that matters</h1>
       <p>Stop wasting valuable time with projects that just isn't you.</p>
@@ -46,7 +49,7 @@
   </main>
 
   <!-- About section -->
-  <section class="about-section">
+  <section class="about-section" id="about">
     <h2>ABOUT THE COMPANY</h2>
     <p>Key features of our company</p>
     <div class="features-container">
@@ -78,7 +81,7 @@
   </section>
 
   <!-- Design Section -->
-  <section class="design-section">
+  <section class="design-section" id="design">
     <div class="design-left">
       <h2>We know design.</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -91,7 +94,7 @@
   </section>
 
   <!-- Team Section -->
-  <section class="team-section">
+  <section class="team-section" id="team">
     <h1>THE TEAM</h1>
     <p>The ones who run this company</p>
     <div class="team-container">
@@ -149,7 +152,7 @@
   </section>
 
   <!-- Work Section -->
-  <section class="work-section">
+  <section class="work-section" id="work">
     <h1>OUR WORK</h1>
     <p>What we've done for people</p>
     <div class="work-gallery">
@@ -184,8 +187,10 @@
   <section class="skills-section">
     <div class="skills-content">
       <h2>Our Skills.</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.
+      </p>
     </div>
     <div class="skills-bars">
       <div class="skill">
@@ -222,7 +227,7 @@
   </section>
 
   <!--Pricing -Section  -->
-  <section class="pricing-section">
+  <section class="pricing-section" id="pricing">
     <h2>PRICING</h2>
     <p>Choose a pricing plan that fits your needs.</p>
     <div class="pricing-container">
@@ -246,7 +251,7 @@
 
       <!-- Pro Plan -->
       <div class="pricing-card featured">
-        <div class="pricing-header">
+        <div class="pricing-header pro">
           <h3>Pro</h3>
         </div>
         <ul class="pricing-features">
@@ -281,7 +286,57 @@
       </div>
     </div>
   </section>
-  
+
+  <!-- Contact section -->
+  <section class="contact-section" id="contact">
+    <h1>CONTACT</h1>
+    <p>Let's get in touch. Send us a message:</p>
+    <div class="contact-info">
+      <div class="info-item">
+        <span class="icon">📍</span>
+        <p>Chicago, US</p>
+      </div>
+      <div class="info-item">
+        <span class="icon">📞</span>
+        <p>Phone: +00 151515</p>
+      </div>
+      <div class="info-item">
+        <span class="icon">📧</span>
+        <p>Email: mail@mail.com</p>
+      </div>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="text" placeholder="Subject" required>
+      <textarea placeholder="Message" rows="5" required></textarea>
+      <button type="submit"> <i class="fa fa-paper-plane"></i> SEND MESSAGE</button>
+    </form>
+  </section>
+
+  <img src="https://www.w3schools.com/w3images/map.jpg" alt="map-img" class="map-img">
+
+  <!-- Footer setion -->
+  <footer class="footer">
+    <div class="to-top">
+      <button><a href="#home">⬆ To the top</a></button>
+    </div>
+    <div class="social-icons">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </div>
+    <div class="credits">
+      Powered by <a href="#">w3.css</a>
+    </div>
+  </footer>
+
+
+  <!-- Js Linking For Navbar -->
+  <script src="script.js"></script>
 
 </body>
 
